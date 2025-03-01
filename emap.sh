@@ -12,4 +12,6 @@ for i in $(seq 0 0xff); do
     if ping -c 1 -W $SN $TARGET &> /dev/null; then
         echo "$TARGET Host is up!"
     fi
+
+    trap "echo 'Keyboard Interrupt'; exit" SIGINT
 done
