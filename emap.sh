@@ -41,7 +41,7 @@ done
 IP="${IP:-$(hostname -I)}"
 BASE="${IP%.*}"
 
-for i in $(seq 0 0xff); do
+for i in $(seq 1 0xfe); do
     TARGET="$BASE.$i"
 
     if ping -c 1 -W $SN $TARGET > /dev/null; then
