@@ -2,7 +2,7 @@
 
 SN=0.5
 
-while getopts "t:h" flag; do
+while getopts "i:t:h" flag; do
     case "$flag" in
         h)
             echo "Kullanım: Komut [option] [argüman]"
