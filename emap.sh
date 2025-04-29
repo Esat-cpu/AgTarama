@@ -7,7 +7,7 @@ while getopts "i:t:h" flag; do
         h)
             echo "Kullanım: Komut [option] [argüman]"
             echo "   -h help"
-            echo "   -t ping'lerin geri dönüşünü bekleme süresi"
+            echo "   -t ping'lerin geri dönüşünü bekleme süresi (max 9.9)"
             echo "   -i taranacak IP adresini manuel olarak belirleme"
             exit 0
             ;;
